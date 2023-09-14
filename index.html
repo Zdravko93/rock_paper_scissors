@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="icon" type="image/icon" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="modal">
+        <p>You have no moves remaining.</p>
+    </div>
+
+    <h1>Rock, Paper, Scissors</h1>
+    <section class="game">
+
+        <div class="scoreboard">
+            <div>
+                <h3>Player</h3>
+                <p class="score player-score">0</p>
+            </div>
+
+            <div>
+                <h3>Computer</h3>
+                <p class="score computer-score">0</p>
+            </div>
+        </div>
+
+        <div class="choose-move">
+            <p>Choose your move!</p>
+        </div>
+
+        <div class="moves-left">
+            <p>Moves Left: 10</p>
+        </div>
+
+        <div class="options">
+            <button class="option" data-choice="rock">
+                <div>
+                    <p>Rock</p>
+                    <img src="images/stone.png" />
+                </div>
+            </button>
+            <button class="option" data-choice="paper">
+                <div>
+                    <p>Paper</p>
+                    <img src="images/paper.png" />
+                </div>
+            </button>
+            <button class="option" data-choice="scissors">
+                <div>
+                    <p>Scissors</p>
+                    <img src="images/scissors.png" />
+                </div>
+            </button>
+        </div>
+
+        <div class="result"></div>
+
+        <button class="reset"></button>
+    </section>
+</body>
+
+</html>
